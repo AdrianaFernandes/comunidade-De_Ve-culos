@@ -1,0 +1,22 @@
+.example-spacer {
+  flex: 0.5 0 auto;
+}
+
+.mat-toolbar{
+  font-size: 30px;
+}
+
+.material-icons{
+  font-size: 50px;
+}
+
+@media (max-width: 600px){
+  .mat-toolbar{
+    font-size: 27px;
+  }
+  .material-icons{
+    font-size: 35px;
+  }
+}
+
+

@@ -1,0 +1,27 @@
+.card_row {
+  display: flex;
+  justify-content: space-around;
+
+}
+.mat-card-header-text{
+  margin: 0px;
+}
+
+.example-card {
+  max-width: 300px;
+}
+
+.example-header-image1 {
+  background-image: url('/assets/img/cards/1.jpg');
+  background-size: cover;
+}
+
+.example-header-image2 {
+  background-image: url('/assets/img/cards/2.jpg');
+  background-size: cover;
+}
+
+.example-header-image3 {
+  background-image: url('/assets/img/cards/3.jpg');
+  background-size: cover;
+}
