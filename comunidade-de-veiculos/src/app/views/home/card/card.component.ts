@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CardService } from './card.service';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  veiculos: Veiculos[]
 
-  ngOnInit(): void {
+  constructor(private cardService: CardService) { }
+
+  ngOnInit() {
+    this.cardService.veiculos().subscribe(veiculos=>this.veiculos=veiculos)
   }
 
 }

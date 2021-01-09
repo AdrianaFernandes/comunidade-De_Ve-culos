@@ -13,6 +13,9 @@ import { FooterComponent } from './views/home/footer/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatInputModule} from '@angular/material/input';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import { HttpModule } from '@angular/http';
+
+
 
 
 @NgModule({
@@ -23,6 +26,7 @@ import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
     CardComponent,
     FooterComponent,
 
+
   ],
   imports: [
     HttpClientModule,
@@ -31,7 +35,8 @@ import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
-    MatInputModule
+    MatInputModule,
+    HttpModule
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
