@@ -1,8 +1,28 @@
-.card_carro{
-  margin: 0.5%;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
 }
 
-.mat-card-header-text{
+.title-page {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 100px;
+}
+
+.card_carro {
+  padding: 5%;
+}
+
+.branch-name{
+  text-align: center;
+  font-size: 14px;
+}
+
+.mat-card-header-text {
   margin: 0px;
 }
 

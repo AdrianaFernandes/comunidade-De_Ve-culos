@@ -1,0 +1,16 @@
+<section>
+  <h1 class="title-page">Marcas Disponiveis Para Pesquisa na Tabela FIPE</h1>
+  <section class="container">
+    <div *ngFor="let i of marcas">
+      <div class="card_carro">
+        <mat-card class="example-card" fxflex="0 1 calc(33.3% - 11px)" fxflex.lt-md="0 1 calc(50% - 11px)"
+          fxflex.lt-sd="100%">
+          <img mat-card-image src="/assets/img/cards/1.jpg" alt=" Photo of a Shiba Inu ">
+          <mat-card-content>
+              <mat-card-title class="branch-name">{{i.fipe_name}}</mat-card-title>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+</section>
