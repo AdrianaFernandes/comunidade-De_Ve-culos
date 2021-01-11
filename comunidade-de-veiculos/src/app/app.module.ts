@@ -13,8 +13,13 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatInputModule} from '@angular/material/input';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import { CardMarcasComponent } from './components/card-marcas/card-marcas.component';
-import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import {MatIconModule} from '@angular/material/icon';
+import { SearchComponent } from './components/search/search.component';
+import {MatSelectModule} from '@angular/material/select';
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 
@@ -25,8 +30,9 @@ import {MatIconModule} from '@angular/material/icon';
     ToolbarOverviewExampleComponent,
     FooterComponent,
     CardMarcasComponent,
-    SearchBarComponent,
+    SearchComponent,
   ],
+  
   imports: [
     HttpClientModule,
     BrowserModule,
@@ -35,7 +41,12 @@ import {MatIconModule} from '@angular/material/icon';
     MatToolbarModule,
     MatCardModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule
+    
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
